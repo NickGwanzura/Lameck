@@ -1,0 +1,6 @@
+{
+  "currency": "USD",
+  "vatRate": 0.155,
+  "delivery": { "Harare": 25, "Bulawayo": 35, "Other Zimbabwe": 50 },
+  "contact": { "phone": "+263 77 000 0000", "whatsapp": "+263 77 000 0000" }
+}
