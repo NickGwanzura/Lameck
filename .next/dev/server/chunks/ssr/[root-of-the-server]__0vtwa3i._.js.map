@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/fevrose/Desktop/SYSTEM/southgrant_website%20(1)/app/admin/page.js"],"sourcesContent":["export const metadata = { title: 'Admin — South Grant' }\nexport default function Admin() { return <main className=\"simple-page\"><p className=\"kicker\">South Grant / Admin</p><h1>Store control</h1><p>Manage products, inventory, orders, customers, and delivery settings from one place.</p><div className=\"admin-cards\"><a href=\"/api/products\">Products & inventory ↗</a><a href=\"/api/orders\">Orders ↗</a></div></main> }\n"],"names":["metadata","title","Admin","className","href"],"mappings":";;;;;;;;AAAO,MAAMA,WAAW;IAAEC,OAAO;AAAsB;AACxC,SAASC;IAAU,qBAAO,8OAAC;QAAKC,WAAU;;0BAAc,8OAAC;gBAAEA,WAAU;0BAAS;;;;;;0BAAuB,8OAAC;0BAAG;;;;;;0BAAkB,8OAAC;0BAAE;;;;;;0BAAwF,8OAAC;gBAAIA,WAAU;;kCAAc,8OAAC;wBAAEC,MAAK;kCAAgB;;;;;;kCAA0B,8OAAC;wBAAEA,MAAK;kCAAc;;;;;;;;;;;;;;;;;;AAA0B"}}]
+}

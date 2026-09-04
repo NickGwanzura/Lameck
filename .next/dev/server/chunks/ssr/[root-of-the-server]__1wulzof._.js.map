@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/fevrose/Desktop/SYSTEM/southgrant_website%20(1)/app/about/page.js"],"sourcesContent":["export const metadata = { title: 'About — South Grant' }\nexport default function About() { return <main className=\"simple-page\"><p className=\"kicker\">Our point of view</p><h1>Considered living.</h1><p>South Grant brings together enduring appliances and furniture for the spaces you call home.</p><a className=\"button button-dark\" href=\"/\">Return home ↗</a></main> }\n"],"names":["metadata","title","About","className","href"],"mappings":";;;;;;;;AAAO,MAAMA,WAAW;IAAEC,OAAO;AAAsB;AACxC,SAASC;IAAU,qBAAO,8OAAC;QAAKC,WAAU;;0BAAc,8OAAC;gBAAEA,WAAU;0BAAS;;;;;;0BAAqB,8OAAC;0BAAG;;;;;;0BAAuB,8OAAC;0BAAE;;;;;;0BAA+F,8OAAC;gBAAEA,WAAU;gBAAqBC,MAAK;0BAAI;;;;;;;;;;;;AAAyB"}}]
+}

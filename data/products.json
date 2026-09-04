@@ -1,0 +1,6 @@
+[
+  {"id":"prod_aga_elise90","slug":"elise-90-range-cooker","name":"Elise 90 Range Cooker","brand":"AGA","category":"appliances","price":4890,"currency":"USD","inventory":4,"status":"active"},
+  {"id":"prod_haven_chair","slug":"haven-lounge-chair","name":"Haven Lounge Chair","brand":"South Grant Atelier","category":"furniture","price":1240,"currency":"USD","inventory":8,"status":"active"},
+  {"id":"prod_smeg_fridge","slug":"50s-style-refrigerator","name":"50's Style Refrigerator","brand":"Smeg","category":"appliances","price":2190,"currency":"USD","inventory":3,"status":"active"},
+  {"id":"prod_bok_table","slug":"bok-extendable-table","name":"Bok Extendable Table","brand":"Ethnicraft","category":"furniture","price":2895,"currency":"USD","inventory":6,"status":"active"}
+]

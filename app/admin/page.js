@@ -1,0 +1,2 @@
+export const metadata = { title: 'Admin — South Grant' }
+export default function Admin() { return <main className="simple-page"><p className="kicker">South Grant / Admin</p><h1>Store control</h1><p>Manage products, inventory, orders, customers, and delivery settings from one place.</p><div className="admin-cards"><a href="/api/products">Products & inventory ↗</a><a href="/api/orders">Orders ↗</a></div></main> }

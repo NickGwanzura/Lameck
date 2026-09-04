@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/products/route": "app/api/products/route.js",
+  "/api/velocity/order/route": "app/api/velocity/order/route.js",
+  "/appliances/page": "app/appliances/page.js",
+  "/collections/page": "app/collections/page.js",
+  "/furniture/page": "app/furniture/page.js",
+  "/inspiration/page": "app/inspiration/page.js",
+  "/page": "app/page.js",
+  "/product/[slug]/page": "app/product/[slug]/page.js"
+}

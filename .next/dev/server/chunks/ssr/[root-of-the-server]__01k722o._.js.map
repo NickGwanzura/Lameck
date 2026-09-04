@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/fevrose/Desktop/SYSTEM/southgrant_website%20(1)/app/collections/page.js"],"sourcesContent":["export const metadata = { title: 'Collections — South Grant' }\nexport default function Collections() { return <main className=\"simple-page\"><p className=\"kicker\">South Grant / Explore</p><h1>Collections</h1><p>Curated rooms for a more considered home.</p><a className=\"button button-dark\" href=\"/\">Return home ↗</a></main> }\n"],"names":["metadata","title","Collections","className","href"],"mappings":";;;;;;;;AAAO,MAAMA,WAAW;IAAEC,OAAO;AAA4B;AAC9C,SAASC;IAAgB,qBAAO,8OAAC;QAAKC,WAAU;;0BAAc,8OAAC;gBAAEA,WAAU;0BAAS;;;;;;0BAAyB,8OAAC;0BAAG;;;;;;0BAAgB,8OAAC;0BAAE;;;;;;0BAA6C,8OAAC;gBAAEA,WAAU;gBAAqBC,MAAK;0BAAI;;;;;;;;;;;;AAAyB"}}]
+}

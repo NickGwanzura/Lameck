@@ -1,0 +1,14 @@
+'use client'
+import { useState, useEffect } from 'react'
+
+const catalog = {
+  appliances: [['AGA','Elise 90 Range Cooker','$4,890','image-oven'],['Smeg',"50's Style Refrigerator",'$2,190','image-fridge'],['Miele','PureLine Oven','$3,490','image-oven'],['Bora','Pure Induction Hob','$2,790','image-fridge']],
+  furniture: [['South Grant Atelier','Haven Lounge Chair','$1,240','image-chair'],['Ethnicraft','Bok Extendable Table','$2,895','image-table'],['Muuto','Outline Sofa','$3,890','image-chair'],['Ferm Living','Desert Lounge Chair','$690','image-chair']]
+}
+
+export default function CollectionPage({ type }) {
+  const [bag, setBag] = useState(0)
+  const title = type === 'appliances' ? 'Appliances' : 'Furniture'
+  useEffect(() => { document.querySelectorAll('.product').forEach((card) => { card.style.cursor='pointer'; card.onclick=()=>{ const name=card.querySelector('h3')?.textContent||''; const slug=name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-$/,''); window.location.href='/product/'+slug } }) }, [])
+  return <><header className="site-header"><nav className="nav container"><a className="brand logo-wrap" href="/" aria-label="South Grant home"><img src="/southgrant-logo.png" alt="South Grant" /></a><ul className="nav-menu"><li><a href="/">New arrivals</a></li><li><a className="active" href="/appliances">Appliances</a></li><li><a href="/furniture">Furniture</a></li><li><a href="/collections">Collections</a></li><li><a href="/inspiration">Inspiration</a></li><li><a href="/about">About</a></li></ul><div className="nav-tools"><button className="icon-btn" aria-label="Search">⌕</button><button className="icon-btn">Bag <sup>{bag}</sup></button></div></nav></header><main><section className="page-hero"><div className="container"><p className="kicker">South Grant / Shop</p><h1>{title}</h1><p>{type === 'appliances' ? 'Quietly capable appliances, selected for lasting performance and considered design.' : 'Pieces with presence, made for the way you gather, rest, and live.'}</p></div></section><section className="section section-stone"><div className="container"><div className="section-title"><h2>{type === 'appliances' ? 'Featured appliances' : 'Featured furniture'}</h2><span className="result-count">{catalog[type].length} pieces</span></div><div className="product-grid">{catalog[type].map(([brand,name,price,image])=><article className="product" key={name}><div className={`product-image ${image}`}><button className="wishlist" aria-label={`Add ${name} to wishlist`}>♡</button></div><p className="product-brand">{brand}</p><h3>{name}</h3><p className="price">{price}</p><button className="add-btn" onClick={()=>setBag(bag+1)}>Add to bag</button></article>)}</div></div></section></main><footer><div className="container footer-top"><a className="brand logo-wrap" href="/" aria-label="South Grant home"><img src="/southgrant-logo.png" alt="South Grant" /></a><p>Considered living for modern homes.</p></div></footer></>
+}
