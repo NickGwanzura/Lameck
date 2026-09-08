@@ -1,3 +1,3 @@
-import CollectionPage from '../components/CollectionPage'
+import { redirect } from 'next/navigation'
 export const metadata = { title: 'Appliances — South Grant' }
-export default function Appliances() { return <CollectionPage type="appliances" /> }
+export default function Appliances() { redirect('/category/refrigerators') }

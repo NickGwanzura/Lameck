@@ -5,7 +5,7 @@ import path from 'node:path'
 const fallback = path.join(process.cwd(), 'data/products.json')
 export async function GET(request) {
   const { searchParams } = new URL(request.url); const q = (searchParams.get('q') || '').toLowerCase(); const category = searchParams.get('category'); const db = getDb()
-  if (db) { const result = await db.query(`SELECT id,slug,name,brand,category,price::float, currency,inventory,status FROM products WHERE ($1='' OR category=$1) AND ($2='' OR lower(name||' '||coalesce(brand,'')) LIKE '%'||$2||'%') ORDER BY created_at DESC`, [category || '', q]); return NextResponse.json({ products: result.rows, currency: 'USD' }) }
+  if (db) { const result = await db.query(`SELECT id,slug,name,brand,category,price::float, currency,inventory,status FROM products WHERE status='active' AND ($1='' OR category=$1) AND ($2='' OR lower(name||' '||coalesce(brand,'')) LIKE '%'||$2||'%') ORDER BY created_at DESC`, [category || '', q]); return NextResponse.json({ products: result.rows, currency: 'USD' }) }
   const products = JSON.parse(await fs.readFile(fallback, 'utf8')).filter((p) => (!category || p.category === category) && (!q || `${p.name} ${p.brand}`.toLowerCase().includes(q))); return NextResponse.json({ products, currency: 'USD' })
 }
 export async function POST(request) {
