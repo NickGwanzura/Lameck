@@ -24,16 +24,18 @@ export default function AdminLogin() {
     setError('Use the demo email and password shown above.')
   }
 
-  return <main className="simple-page admin-login-page">
-    <p className="kicker">South Grant / Admin</p>
-    <h1>Sign in</h1>
-    <p>Use the demo credentials below to open store control.</p>
-    <div className="demo-credentials"><span>Email</span><strong>{DEMO_EMAIL}</strong><span>Password</span><strong>{DEMO_PASSWORD}</strong></div>
-    <form className="contact-form" onSubmit={submit}>
-      <label htmlFor="admin-email">Email</label><input id="admin-email" name="email" type="email" autoComplete="username" required />
-      <label htmlFor="admin-password">Password</label><input id="admin-password" name="password" type="password" autoComplete="current-password" required />
-      <button className="button button-dark" type="submit">Sign in</button>
-      {error && <p className="form-status error" role="alert">{error}</p>}
-    </form>
+  return <main className="admin-login-page">
+    <div className="admin-login-card">
+      <p className="kicker">South Grant / Admin</p>
+      <h1>Sign in</h1>
+      <p>Use the demo credentials below to open store control.</p>
+      <div className="demo-credentials"><span>Email</span><strong>{DEMO_EMAIL}</strong><span>Password</span><strong>{DEMO_PASSWORD}</strong></div>
+      <form className="contact-form" onSubmit={submit}>
+        <label htmlFor="admin-email">Email</label><input id="admin-email" name="email" type="email" autoComplete="username" required />
+        <label htmlFor="admin-password">Password</label><input id="admin-password" name="password" type="password" autoComplete="current-password" required />
+        <button className="button button-dark" type="submit">Sign in</button>
+        {error && <p className="form-status error" role="alert">{error}</p>}
+      </form>
+    </div>
   </main>
 }
