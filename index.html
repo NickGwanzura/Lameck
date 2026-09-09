@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement">Complimentary white glove delivery on orders over $2,000 <button id="dismiss" aria-label="Dismiss announcement">×</button></div>
+  <div class="announcement">Complimentary home delivery on orders over $2,000 <button id="dismiss" aria-label="Dismiss announcement">×</button></div>
   <header class="site-header"><nav class="nav container">
     <a class="brand" href="#home" aria-label="South Grant home">south<span>grant</span></a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <ul class="nav-menu" id="navMenu">
       <li><a class="active" href="#home">New arrivals</a></li><li><a href="#shop">Appliances</a></li><li><a href="#shop">Furniture</a></li><li><a href="#collections">Collections</a></li>
     </ul>
-    <div class="nav-tools"><button aria-label="Search" class="icon-btn" id="searchBtn">⌕</button><button aria-label="Shopping bag" class="icon-btn" id="bagBtn">Bag <sup id="bagCount">0</sup></button></div>
+    <div class="nav-tools"><button aria-label="Search" class="icon-btn" id="searchBtn">⌕</button><a class="header-admin-link" href="/admin/login">Admin</a><button aria-label="Shopping bag" class="icon-btn" id="bagBtn">Bag <sup id="bagCount">0</sup></button></div>
   </nav></header>
   <main>
     <section class="hero" id="home"><div class="hero-image"></div><div class="hero-copy container"><p class="kicker">The quiet art of living well</p><h1>Objects with<br><em>presence.</em></h1><p>Enduring appliances and furniture, chosen for the spaces you call home.</p><a class="button button-light" href="#shop">Shop the collection <span>↗</span></a></div></section>
-    <section class="service-strip"><div><strong>Curated materials</strong><span>Built to be lived with</span></div><div><strong>White glove delivery</strong><span>From our door to yours</span></div><div><strong>Expert guidance</strong><span>Here when you need us</span></div></section>
+    <section class="service-strip"><div><strong>Curated materials</strong><span>Built to be lived with</span></div><div><strong>Home delivery</strong><span>From our door to yours</span></div><div><strong>Expert guidance</strong><span>Here when you need us</span></div></section>
     <section class="section" id="collections"><div class="container"><div class="section-title"><p class="kicker">Explore</p><h2>Designed for the everyday</h2><a href="#shop" class="text-link">View all collections ↗</a></div><div class="collection-grid"><a class="collection collection-kitchen" href="#shop"><span>Kitchen</span><small>Quietly capable</small></a><a class="collection collection-living" href="#shop"><span>Living</span><small>Made for gathering</small></a><a class="collection collection-bedroom" href="#shop"><span>Bedroom</span><small>A softer rhythm</small></a></div></div></section>
     <section class="section section-stone" id="shop"><div class="container"><div class="section-title"><div><p class="kicker">Featured products</p><h2>New arrivals</h2></div><div class="filters"><button class="filter active">All</button><button class="filter">Appliances</button><button class="filter">Furniture</button></div></div><div class="product-grid">
       <article class="product" data-category="appliances"><div class="product-image image-oven"><button class="wishlist" aria-label="Add AGA oven to wishlist">♡</button><span class="tag">New</span></div><p class="product-brand">AGA</p><h3>Elise 90 Range Cooker</h3><p class="price">$4,890</p><button class="add-btn">Add to bag</button></article>

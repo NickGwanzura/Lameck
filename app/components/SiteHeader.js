@@ -17,7 +17,7 @@ export default function SiteHeader({ active = '' }) {
   }
 
   return <>
-    <div className="announcement"><span>Complimentary white glove delivery on orders over $2,000</span><a href="/about">Learn more&nbsp;↗</a></div>
+    <div className="announcement"><span>Complimentary home delivery on orders over $2,000</span><a href="/about">Learn more&nbsp;↗</a></div>
     <header className="site-header casora-header"><nav className="nav container" aria-label="Primary navigation">
       <a className="brand logo-wrap" href="/" aria-label="South Grant home"><img src="/southgrant-logo.png" alt="South Grant" /></a>
       <button className={`mobile-menu-toggle ${mobileOpen ? 'is-open' : ''}`} aria-label={mobileOpen ? 'Close menu' : 'Open menu'} aria-expanded={mobileOpen} onClick={() => { setMobileOpen(!mobileOpen); setShopOpen(false) }}><span /><span /></button>
@@ -26,7 +26,7 @@ export default function SiteHeader({ active = '' }) {
         <li className="nav-menu-dropdown"><button className={shopOpen ? 'active' : ''} aria-expanded={shopOpen} onClick={() => { setShopOpen(!shopOpen); setSearchOpen(false) }}>Shop <span>⌄</span></button></li>
         <li><a className={active === 'collections' ? 'active' : ''} href="/collections">Collections</a></li>
       </ul>
-      <div className="nav-tools"><button className="header-icon" aria-label="Search" aria-expanded={searchOpen} onClick={() => setSearchOpen(!searchOpen)}><span aria-hidden="true">⌕</span><small>Search</small></button><a className="header-icon header-wishlist" href="/collections" aria-label="Wishlist"><span aria-hidden="true">♡</span><small>Wishlist</small></a><CartButton /></div>
+      <div className="nav-tools"><button className="header-icon" aria-label="Search" aria-expanded={searchOpen} onClick={() => setSearchOpen(!searchOpen)}><span aria-hidden="true">⌕</span><small>Search</small></button><a className="header-icon header-wishlist" href="/collections" aria-label="Wishlist"><span aria-hidden="true">♡</span><small>Wishlist</small></a><a className="header-admin-link" href="/admin/login">Admin</a><CartButton /></div>
     </nav>{searchOpen && <form className="header-search" onSubmit={submitSearch}><label htmlFor="site-search">Search South Grant</label><input id="site-search" autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search refrigerators, phones, solar…" /><button type="submit" aria-label="Submit search">↗</button></form>}{shopOpen && <div className="mega-menu"><div className="container mega-menu-grid"><div><p className="mega-kicker">Shop South Grant</p><h2>Considered technology for every home.</h2><p>Explore practical essentials, beautiful screens, connected devices, and resilient solar power for Zimbabwean homes.</p><a className="text-link" href="/collections">View all categories ↗</a></div><div><p className="mega-kicker">Categories</p><a href="/category/refrigerators">Refrigerators <span>↗</span></a><a href="/category/freezers">Freezers <span>↗</span></a><a href="/category/tv">TV <span>↗</span></a><a href="/category/phones">Phones <span>↗</span></a><a href="/category/solar">Solar <span>↗</span></a></div><div className="mega-feature"><div className="mega-feature-image" /><div><strong>For the spaces you call home</strong><span>Explore the categories&nbsp;↗</span></div></div></div></div>}</header>
   </>
 }
